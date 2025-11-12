@@ -24,16 +24,13 @@ header {
     text-transform: uppercase;
 }
 
-header nav a:hover {
+header nav .nav:hover {
     background-color: #ff4655;
+    background: linear-gradient(#ff4655, 93%, #111111);
     color: #ece8e4;
-    transition: 0.5s;
+    transition: 0.15s;
     font-size: 22px;
     border-radius: 5px;
-}
-
-header nav a:hover:last-child {
-    background-color: transparent;
 }
 
 header nav {
@@ -41,15 +38,14 @@ header nav {
     align-items: center;
     justify-content: space-between;
     padding: 0 20px;
-
 }
 
 header nav a {
     text-decoration: none;
     color: #ff4655;
     font-size: 20px;
-    margin: 15px;
-    padding: 10px;
+    /* margin: 15px;
+    padding: 10px; */
 }
 
 .LogoValorant {
@@ -57,33 +53,14 @@ header nav a {
     height: 80px;
 }
 
-@media only screen and (max-width: 1000px) {
-    .toggle {
-        background-color: transparent;
-        display: flex;
-        flex-direction: column;
-        padding: 10px;
-        border-radius: 5px;
-        border: none;
-        cursor: pointer;
-        overflow: hidden;
-    }
+/* Cacher le bouton hamburger en plein écran (affiché uniquement via la media query mobile (MAIS C'EST INCROYABLE)) */
+.toggle {
+    display: none;
+}
 
-    .toggle:hover {
-        background-color: #323232;
-    }
-
-    .hamburger {
-        width: 27px;
-        height: 5px;
-        background: white;
-        margin: 3px 0;
-        padding-left: 3px;
-        transition: 0.5s;
-    }
-}article {
-    border: 2px solid #000000;
-    padding: 10px;
+article {
+    border: 1.58438px solid #000000;
+    padding: 1rem;
     margin: 35px;
     display: flex;
     flex-direction: column;
@@ -93,9 +70,10 @@ header nav a {
     font-weight: 700;
     box-shadow: 7px 7px rgba(0, 0, 0, 0.05);
     width: 100%;
-    max-width: 350px;
+    max-width: 420px;
 }
-article figure{
+
+article figure {
     padding: 5px;
     display: flex;
     flex-direction: column;
@@ -112,12 +90,12 @@ article a {
     box-shadow: 3px 3px rgba(0, 0, 0, 0.05);
 }
 
+
 article a:hover {
-    background-color: #dcd7d3;
-    color: #111111;
+    background-color: #000000;
+    color: #ece8e4;
     transition: 0.15s;
     margin: 2px;
-    border: 2px solid #ff4655;
     font-weight: 800;
     box-shadow: 5px 5px rgba(0, 0, 0, 0.07);
 }
@@ -172,34 +150,56 @@ footer img {
     width: 60px;
     height: auto;
 }
-#LogoRiot{
+
+#LogoRiot {
     width: 60px;
 }
-#LogoRiot:hover{
+
+#LogoRiot:hover {
     transition: 0.15s;
-    background-color: white;
+    background: radial-gradient(white 10px, white 40%, #111111 50%);
     border-radius: 50%;
 }
 
 footer p {
-    padding-top:1.4rem;
+    padding-top: 1.4rem;
 }
 
 .Reseaux {
     width: 1120px;
     display: flex;
     justify-content: flex-end;
-
 }
-
 
 footer a img:hover {
     transition: 0.15s;
     transform: scale(1.05);
     border-radius: 5px;
-}   
+}
 
+.LogoReseaux {
+    width: 55px;
+    height: auto;
+}
+
+.LogoReseauxinsta {
+    width: 96px;
+}
+
+.LogoReseaux:hover {
+    transition: 0.15s;
+
+}
+
+.LogoReseauxinsta:hover {
+    transition: 0.15s;
+
+}
+
+
+/* interface desktop? */
 @media only screen and (max-width: 1000px) {
+
     main {
         flex-direction: column;
         align-items: center;
@@ -221,5 +221,60 @@ footer a img:hover {
         justify-content: center;
         width: auto;
         margin-top: 10px;
+    }
+
+    header nav a:hover:last-child {
+        background-color: none;
+        color: none;
+    }
+
+}
+
+/* interface mobile ? */
+@media only screen and (max-width: 1000px) {
+    .toggle {
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        overflow: hidden;
+    }
+
+    .hamburger {
+        width: 27px;
+        height: 5px;
+        background: white;
+        margin: 3px 0;
+        padding-left: 3px;
+        transition: 0.5s;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    header nav a {
+        font-size: 16px;
+        margin: 10px;
+        padding: 8px;
+    }
+
+    .LogoValorant {
+        height: 60px;
+    }
+
+    article {
+        max-width: 90%;
+    }
+
+    main {
+        margin-top: 80px;
+        gap: 20px;
+    }
+
+    section {
+        gap: 20px;
     }
 }
