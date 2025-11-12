@@ -1,0 +1,6 @@
+couleur rouge pour buttons, hovers: #ff4655
+couleur noir pour header, footer ou un fond: #111111
+couleur blanc pour background, hamburger : #ece8e4
+(en case d'articles avec ce fond, utiliser : #f0ede9)
+couleur noir (plus clair) pour hovers du rouge au #0f1923
+si le button est déjà en #0f1923, hover en #ece8e4
