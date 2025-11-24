@@ -25,8 +25,8 @@ header {
 }
 
 header nav .nav:hover {
-    background-color: #ff4655;
-    background: linear-gradient(#ff4655, 93%, #111111);
+    /* background-color: #ff4655; */
+    /* background: linear-gradient(#ff4655, 93%, #111111); */
     color: #ece8e4;
     transition: 0.15s;
     font-size: 22px;

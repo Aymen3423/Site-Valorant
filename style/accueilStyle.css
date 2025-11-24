@@ -25,9 +25,9 @@ header {
 }
 
 header nav .nav:hover {
-    background-color: #ff4655;
-    background: linear-gradient(#ff4655, 93%, #111111);
-    color: #ece8e4;
+    /* background-color: #ff4655; */
+    /* background: linear-gradient(#ff4655, 93%, #111111); */
+    color: white;
     transition: 0.15s;
     font-size: 22px;
     border-radius: 5px;
@@ -59,7 +59,7 @@ header nav a {
 }
 
 article {
-    border: 1.58438px solid #000000;
+    /* border: 1.58438px solid #000000; */
     background-color: #f0ede9;
     padding: 1rem;
     margin: 35px;
