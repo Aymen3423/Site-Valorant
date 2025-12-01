@@ -1,6 +1,8 @@
+
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #1d1b26;
+    background-color: #ece8e4;
     margin: 0;
     padding: 0;
     max-width: 100%;
@@ -9,6 +11,7 @@ body {
     /* Supprimé pour permettre le défilement horizontal */
     /* overflow: hidden; */
     /*Supprimé pour permettre le défilement verticale  */
+    background-color: #0f1923;
 }
 
 header {
@@ -27,7 +30,7 @@ header {
 header nav .nav:hover {
     /* background-color: #ff4655; */
     /* background: linear-gradient(#ff4655, 93%, #111111); */
-    color: #ece8e4;
+    color: white;
     transition: 0.15s;
     font-size: 22px;
     border-radius: 5px;
@@ -59,40 +62,80 @@ header nav a {
 }
 
 article {
-    color: #0f1923;
-    background: linear-gradient(#161d26,#37444d);
+    /* border: 1.58438px solid #000000; */
+    padding: 1rem;
     margin: 35px;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     justify-content: center;
-    font-weight: 700;
     box-shadow: 7px 7px rgba(0, 0, 0, 0.05);
     width: 100%;
     max-width: 420px;
-    /* flex-wrap: wrap; */
+}
+
+article h5 {
+    font-size: 14px;
+    color: #ff4655;
+    margin-bottom: 5px;
+    ;
 }
 
 article figure {
+    padding: 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    
+}
+
+article a {
+    text-decoration: none;
+    background-color: #ff4655;
+    color: #ece8e4;
+    margin: 2px;
+    padding: 10px;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.05);
+}
+
+
+article a:hover {
+    background-color: #000000;
+    color: #ece8e4;
+    transition: 0.15s;
+    margin: 2px;
+    font-weight: 800;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.07);
+}
+
+figcaption{
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 10px;
+
+
 }
 
 article img {
-    margin: 0;
-    border: 1px solid #ff4655;
+    margin: 15px;
+    border: 4px solid #ff4655;
     display: block;
     max-width: 100%;
     height: auto;
 }
 
+
+/* article img:hover {
+    transition: 0.15s;
+    transform: scale(1.15);
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.07);
+} */
+
 main article img {
-    width: 300px;
-    height: 200px;
+    width: 600px;
+    /* height: 200px; */
     object-fit: cover;
     margin-bottom: 10px;
 }
@@ -103,7 +146,8 @@ main {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 40px;
+    gap: 105px;
+    flex-wrap: wrap;
 }
 
 section {
@@ -111,6 +155,7 @@ section {
     flex-direction: row;
     padding: 5px;
     gap: 40px;
+    flex-wrap: wrap;
 }
 
 footer {
@@ -177,6 +222,7 @@ footer a img:hover {
     transition: 0.15s;
 
 }
+
 
 /* interface desktop? */
 @media only screen and (max-width: 1000px) {
@@ -252,7 +298,8 @@ footer a img:hover {
 
     main {
         margin-top: 80px;
-        gap: 20px;
+        gap: 15px;
+        
     }
 
     section {
