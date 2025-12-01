@@ -70,10 +70,12 @@ article {
     align-items: center;
     text-align: center;
     justify-content: center;
-    box-shadow: 7px 7px rgba(0, 0, 0, 0.05);
+    box-shadow: 7px 7px rgba(255, 255, 255, 0.05);
     width: 100%;
     max-width: 420px;
-    border: 1px solid white;
+    /* border: 1px solid white; */
+    margin-left: 250px;
+    border-radius: 20px;
 }
 
 article h5 {
@@ -83,6 +85,8 @@ article h5 {
     ;
 }
 
+
+
 .titre{
     font-size: 344px;
     color: #ece8e4;
@@ -90,6 +94,7 @@ article h5 {
     font-weight: 800;
     background-color: white;
     width: 440px;
+    border-radius: 20px ;
 
 
 }
