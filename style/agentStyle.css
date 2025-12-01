@@ -64,7 +64,7 @@ header nav a {
 article {
     /* border: 1.58438px solid #000000; */
     padding: 1rem;
-    margin: 35px;
+    /* margin: 35px; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -79,8 +79,19 @@ article {
 article h5 {
     font-size: 14px;
     color: #ff4655;
-    margin-bottom: 5px;
+    /* margin-bottom: 5px; */
     ;
+}
+
+.titre{
+    font-size: 344px;
+    color: #ece8e4;
+
+    font-weight: 800;
+    background-color: white;
+    width: 440px;
+
+
 }
 
 article figure {
@@ -114,7 +125,7 @@ figcaption{
     color: white;
     font-size: 18px;
     font-weight: 600;
-    margin-top: 10px;
+    /* margin-top: 10px; */
 
 
 }
